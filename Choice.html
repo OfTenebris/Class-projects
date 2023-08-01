@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choice
+    </title>
+</head>
+<style>
+button {
+    padding: 10px;
+    background: rgb(95, 159, 202);
+    color: rgb(255, 255, 255);
+    font-family: fantasy; 
+  }
+</style>
+<body>
+    <h2>
+        You come across small creature, as you approach, the creature remains still, staring at you it tilts it's head widening it's eyes.
+        What do you do?
+    </h2>
+      <form>
+        <fieldset>
+          <legend>Make a choice</legend>
+          <div>
+            <button onclick="myFunction()">Feed</button>
+            </button>
+          </div>
+          <div>
+            <button onclick="secondFunction()">Ignore</button>
+          </div>
+          <p id="demo"></p>
+          <script>
+          //Alerts the user based on a choice  
+          function myFunction() {
+            alert("You Made A Friend!");
+          }
+          function secondFunction() {
+            alert("Oh no! The creature was eaten by another!");
+          }
+          </script>
+          
+            
+          </script>
+        </fieldset>
+</body>
+</html>
