@@ -1,0 +1,66 @@
+<!-- Keith Kristoff -->
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<style>
+#myimg
+ {
+  width: 100;
+  height: 100px;
+  position: absolute;
+}
+body{
+ background-color: #e94f44;
+}
+input{
+  width: 5%;
+  padding: 10px 20px;
+  background-color: #9e1f16;
+  border: none;
+  border-radius: 3px;
+  color: #ffffff;
+  font-weight: 400;
+}
+</style>
+<body>
+<input type="button" value="Start" onclick="Button:startStopImg()" id="startButton">
+<img id="myimg" src="c:\Users\theke\Downloads\Cat.gif" alt="">
+</body>
+
+<script>
+var imgObj;
+var animate = null;
+function init(){
+    imgObj = document.getElementById('myimg');
+    imgObj.style.position= "relative";
+    imgObj.style.left = "0px";
+}
+
+startStopImg = function(){
+    if(animate != null){
+        stop();
+    } else {
+        moveRight();
+        
+    }
+    change();
+}
+function moveRight(){
+imgObj.style.left = (parseInt(imgObj.style.left) + 5) + 'px';
+animate = setTimeout(moveRight,50); 
+}
+
+change = function(){
+var elem = document.getElementById("startButton");
+if (elem.value=="Stop") elem.value = "Start";
+else elem.value = "Stop";
+}
+
+stop = function(){
+    clearTimeout(animate);
+    animate = null;
+}
+window.onload = init();
+</script>
+</html>
