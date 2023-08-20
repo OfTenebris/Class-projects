@@ -1,7 +1,6 @@
-{Keith Kristoff}
-body {
-    background-color: rgb(165, 0, 55);
-  }
+body{
+   background-color: #e94f44;
+}
   
   h1 {
     color:blanchedalmond;
@@ -13,20 +12,42 @@ body {
     font-size: 20px;
     font-weight: bolder;
   }
- nav {
-    height: 6000px;
-    width: 200px;
-    float: left;
-    padding: 5px;
-    line-height: 30px;
+  ul {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+   background-color: #9e1f16;
  }
+ 
+ li {
+   float: left;
+ }
+ 
+ li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+ }
+ 
+ /* Change the link color to #111 (black) on hover */
+ li a:hover {
+   background-color: #111;
+ } 
+ 
  header {
     text-align: center;
  }
- footer {
-    text-align: center;
-    margin-right: 200px;
- }
  img {
-    margin-right: 200px;
+    margin-left: 780px;
+    position: fixed;
   }
+  #footer {
+   position: absolute;
+   bottom: 0;
+   text-align: center;
+   margin-left: 720px;
+   color: aliceblue;
+}
